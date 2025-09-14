@@ -1,0 +1,28 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+	color: #fff;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+@font-face {
+	font-family: 'ReggaeOne';
+	font-weight: 400;
+	src: url(ReggaeOne-Regular.ttf);
+	type: 'truetype';
+}
+@font-face {
+	font-family: 'UnifrakturCook';
+	font-weight: 400;
+	src: url(UnifrakturCook-Bold.ttf);
+	type: 'truetype';
+}
+
+:root {
+	--font-main: 24px 'ReggaeOne', serif;
+	--font-num: 85px 'UnifrakturCook', serif;
+}
