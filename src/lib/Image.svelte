@@ -12,9 +12,6 @@
 		animation: jump 2s ease-in-out 1s infinite alternate;
 		perspective: 1000px;
 	}
-	.image__wrapper img {
-		animation: wobble 4s ease-in-out infinite;
-	}
 
 	@keyframes jump {
 		from {
@@ -22,20 +19,6 @@
 		}
 		to {
 			transform: translateY(-50px);
-		}
-	}
-	@keyframes wobble {
-		0% {
-			transform: rotateY(2deg) rotateX(2deg) translateZ(0px);
-		}
-		25% {
-			transform: rotateY(4deg) rotateX(0deg) translateZ(2px);
-		}
-		75% {
-			transform: rotateY(-2deg) rotateX(-2deg) translateZ(-2px);
-		}
-		100% {
-			transform: rotateY(2deg) rotateX(2deg) translateZ(0px);
 		}
 	}
 </style>

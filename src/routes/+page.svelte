@@ -3,6 +3,7 @@
 	import Scene from '$lib/Scene.svelte';
 	import Background from '$lib/Background.svelte';
 	import Timeline from '$lib/Timeline.svelte';
+	import Copyright from '$lib/Copyright.svelte';
 
 	let scenes = $state();
 </script>
@@ -27,6 +28,7 @@
 				{/snippet}
 			</Scene>
 		{/each}
+		<Copyright />
 	</div>
 </div>
 
