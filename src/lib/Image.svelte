@@ -26,16 +26,16 @@
 	}
 	@keyframes wobble {
 		0% {
-			transform: rotateY(6deg) rotateX(2deg) translateZ(0px);
+			transform: rotateY(2deg) rotateX(2deg) translateZ(0px);
 		}
 		25% {
-			transform: rotateY(0deg) rotateX(0deg) translateZ(6px);
+			transform: rotateY(4deg) rotateX(0deg) translateZ(2px);
 		}
 		75% {
-			transform: rotateY(-4deg) rotateX(-2deg) translateZ(-6px);
+			transform: rotateY(-2deg) rotateX(-2deg) translateZ(-2px);
 		}
 		100% {
-			transform: rotateY(6deg) rotateX(2deg) translateZ(0px);
+			transform: rotateY(2deg) rotateX(2deg) translateZ(0px);
 		}
 	}
 </style>
