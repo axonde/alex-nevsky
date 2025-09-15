@@ -1,12 +1,12 @@
 <script>
-	let { title, text, img } = $props();
+	let { title, text, img, alternate = null } = $props();
 </script>
 
 <div class="content__wrapper">
-	<div class="content__container">
+	<div class="content__container {alternate ? 'alternate' : ''}">
 		<div class="content">
 			<div
-				class="title text-3xl bg-gradient-to-b from-white to-neutral-700 text-transparent bg-clip-text"
+				class="title bg-gradient-to-b from-white to-neutral-700 bg-clip-text text-3xl text-transparent"
 			>
 				{title}
 			</div>
@@ -23,13 +23,18 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 100svh;
+		height: 100vh;
 		width: 100%;
-		padding: 100px 35px 85px 0;
+		padding: 100px 35px 30px 0;
+		scroll-snap-align: center;
+		flex-shrink: 0;
 	}
 	.content__container {
 		display: flex;
 		justify-content: center;
+	}
+	.content__container.alternate {
+		flex-direction: row-reverse;
 	}
 	.content {
 		font: var(--font-main);
@@ -60,6 +65,7 @@
 		margin-top: 15px;
 	}
 	.img__wrapper {
+		align-self: self-end;
 		max-width: 50%;
 	}
 </style>
