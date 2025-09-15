@@ -7,10 +7,9 @@
 	$effect(() => {
 		const height = bind.scrollHeight;
 		const gap = height / values.length;
-		bind.addEventListener('scroll', (e) => {
+		bind.addEventListener('scroll', (/**@type any */ e) => {
 			const currentScroll = e.target.scrollTop;
 			selected = Math.round(currentScroll / gap);
-			console.log(currentScroll, gap, Math.round(currentScroll / gap));
 		});
 	});
 </script>
@@ -35,6 +34,7 @@
 		gap: 30px;
 		align-items: center;
 		font: var(--font-num);
+		font-size: calc((1vw + 1vh) * 4);
 	}
 	.items__wrapper {
 		display: flex;

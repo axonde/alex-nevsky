@@ -42,7 +42,8 @@
 		gap: 20px;
 		flex-direction: column;
 		font-size: 24px;
-		max-width: 50%;
+		position: relative;
+		z-index: 2;
 	}
 	.title {
 		font-size: 64px;
@@ -67,5 +68,7 @@
 	.img__wrapper {
 		align-self: self-end;
 		max-width: 50%;
+		position: relative;
+		z-index: 1;
 	}
 </style>
