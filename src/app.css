@@ -27,9 +27,16 @@
 	src: url(RubikBroken.ttf);
 	type: 'truetype';
 }
+@font-face {
+	font-family: 'ViaodaLibre';
+	font-weight: 400;
+	src: url(ViaodaLibre.ttf);
+	type: 'truetype';
+}
 
 :root {
 	--font-main: 24px 'ReggaeOne', serif;
 	--font-num: 85px 'UnifrakturCook', serif;
     --font-copyright: 120px 'RubikBroken', serif;
+    --font-text: 20px 'ViaodaLibre', serif;
 }

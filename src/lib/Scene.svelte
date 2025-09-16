@@ -8,7 +8,7 @@
 			<div
 				class="title bg-gradient-to-b from-white to-neutral-700 bg-clip-text text-3xl text-transparent"
 			>
-				{title}
+				{@html title}
 			</div>
 			<div class="text">{text}</div>
 		</div>
@@ -37,23 +37,24 @@
 		flex-direction: row-reverse;
 	}
 	.content {
-		font: var(--font-main);
 		display: flex;
 		gap: 20px;
 		flex-direction: column;
-		font-size: 24px;
 		position: relative;
 		z-index: 2;
+		flex-shrink: 0;
 	}
 	.title {
-		font-size: 64px;
 		padding: 10px 0;
 		letter-spacing: -20px;
-		height: 70px;
+		font: var(--font-main);
+		font-size: 48px;
+		white-space: normal;
 	}
 	.text {
-		max-width: 320px;
+		max-width: 380px;
 		padding: 0 15px;
+		font: var(--font-text);
 	}
 	.text:after {
 		content: '';

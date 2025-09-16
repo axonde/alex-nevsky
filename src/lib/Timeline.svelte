@@ -3,17 +3,15 @@
 	import NumberFlow from '@number-flow/svelte';
 	let { values, bind = $bindable() } = $props();
 	let selected = $state(0);
-	let fadeoff = $state(false);
+	let fadeoff = $state(true);
 
 	$effect(() => {
 		const height = bind.scrollHeight;
-		const gap = height / (values.length + 1);
+		const gap = height / (values.length + 2);
 		bind.addEventListener('scroll', (/**@type any */ e) => {
 			const currentScroll = e.target.scrollTop;
 			const index = Math.round(currentScroll / gap);
-			console.log(index, height, currentScroll);
-			if (index >= values.length) {
-				console.log('end');
+			if (index === 0 || index > values.length) {
 				fadeoff = true;
 				return;
 			}
@@ -26,11 +24,10 @@
 <div class="scroller {fadeoff ? 'disable' : ''}" transition:fade>
 	<div class="items__wrapper">
 		{#each [...Array(values.length).keys()] as i (i)}
-			<div class="item {i === selected ? 'selected' : ''}"></div>
+			<div class="item {i === selected - 1 ? 'selected' : ''}"></div>
 		{/each}
 	</div>
-	<!-- <span class="text" transition:slide> {values[selected]}</span> -->
-	<NumberFlow value={values[selected]} />
+	<NumberFlow value={values[selected - 1]} />
 </div>
 
 <style>
