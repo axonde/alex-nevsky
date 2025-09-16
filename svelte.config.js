@@ -4,9 +4,11 @@ const dev = process.argv.includes('dev');
 
 const config = {
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      fallback: '200.html'
+     }),
     paths: {
-      base: dev ? '' : 'alex-nevsky',
+      base: dev ? '' : '/alex-nevsky',
     }
   }
 };
