@@ -45,7 +45,7 @@
 		flex-shrink: 0;
 	}
 	.title {
-		padding: 10px 0;
+		padding: 10px 20px 10px 0;
 		letter-spacing: -20px;
 		font: var(--font-main);
 		font-size: 48px;
