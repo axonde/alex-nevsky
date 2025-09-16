@@ -12,31 +12,27 @@
 @font-face {
 	font-family: 'ReggaeOne';
 	font-weight: 400;
-	src: url(ReggaeOne-Regular.ttf);
-	type: 'truetype';
+	src: url('/ReggaeOne-Regular.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'UnifrakturCook';
 	font-weight: 400;
-	src: url(UnifrakturCook-Bold.ttf);
-	type: 'truetype';
+	src: url('/UnifrakturCook-Bold.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'RubikBroken';
 	font-weight: 400;
-	src: url(RubikBroken.ttf);
-	type: 'truetype';
+	src: url('/RubikBroken.ttf') format('truetype');
 }
 @font-face {
 	font-family: 'ViaodaLibre';
 	font-weight: 400;
-	src: url(ViaodaLibre.ttf);
-	type: 'truetype';
+	src: url('/ViaodaLibre.ttf') format('truetype');
 }
 
 :root {
-	--font-main: 24px 'ReggaeOne', serif;
-	--font-num: 85px 'UnifrakturCook', serif;
-    --font-copyright: 120px 'RubikBroken', serif;
-    --font-text: 20px 'ViaodaLibre', serif;
+	--font-main: 24px 'ReggaeOne';
+	--font-num: 85px 'UnifrakturCook';
+    --font-copyright: 120px 'RubikBroken';
+    --font-text: 20px 'ViaodaLibre';
 }

@@ -8,6 +8,7 @@
 		flex-shrink: 0;
 		display: flex;
 		align-items: center;
+		font-size: calc((1vw + 1vh) * 6);
 	}
 	a {
 		display: block;
