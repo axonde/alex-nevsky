@@ -58,7 +58,7 @@
 	}
 	.text:after {
 		content: '';
-		background: url('pattern.jpg');
+		background: url('/pattern.jpg');
 		background-size: 40%;
 		height: 30px;
 		border-radius: 10px;
